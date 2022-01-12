@@ -49,7 +49,7 @@ export default function Home() {
 
   } 
   const [idsQuestoes, setIdsQuestoes] = useState<number[]>([])
-  const BASE_URL = 'http://localhost:3000/api';
+  const BASE_URL = 'https://quiz-henna.vercel.app/api';
   async function getIds() {
     const resp = await fetch(`${BASE_URL}/questionario`)
     const idsQuestoes = await resp.json();
